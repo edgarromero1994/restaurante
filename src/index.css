@@ -1,0 +1,228 @@
+nav {
+  background-color: #091a2a;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+  border: solid 1px black;
+  font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+}
+
+nav > h2 {
+  position: relative;
+  left: 60;
+  font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+  list-style: none;
+  cursor: pointer;
+}
+
+.item-icono {
+  width: 30px;
+  height: 30px 
+}
+/******** Items List ******/
+
+.items-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+/****** Item  box *********/
+.item-box {
+  background-color: #fff;
+  margin: 10px;
+  padding: 20px;
+  width: 140px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-shadow: 4px 0px 4px rgba(9, 10, 10, 0.3);
+  font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+}
+
+.item-quantity {
+  color: #fff;
+  background-color: #f0ad4e;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  max-width: 30px;
+  position: relative;
+  left: 40px;
+  margin-left: 20px;
+}
+
+.item-price {
+  color: gray;
+}
+
+.item-add-button {
+  background-color: #318ce7;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  font-size: 11px;
+  cursor: pointer;
+  height: 20px;
+}
+
+.item-minus-button {
+  background-color: #d9534f;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.item-plus-button {
+  background-color: #318ce7;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+/****** Shopping Cart ********/
+
+.cart-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.cart-count {
+  background-color: #318ce7;
+  border-radius: 20px;
+  padding: 8px;
+}
+
+.item-name {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.item-imagen {
+  border-radius: 5px;
+}
+
+.inicio {
+  color: #318ce7;
+}
+
+/* Estilos para el contenedor de la factura */
+.invoice-container {
+  border: 2px solid #000;
+  padding: 20px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+/* Estilos para el encabezado */
+.invoice-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el resumen */
+.invoice-summary {
+  margin-bottom: 20px;
+}
+
+/* Estilos para los elementos del carrito */
+.cart-item {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Estilos para los nombres de los productos */
+.item-name {
+  font-weight: bold;
+}
+
+/* Estilos para la cantidad y el precio */
+.item-quantity,
+.item-price {
+  font-size: 0.9em;
+}
+
+.item-pagar {
+  background-color: #318ce7;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  font-size: 11px;
+  cursor: pointer;
+  height: 20px;
+}
+
+.invoice-summary {
+  display: flex;
+ flex-direction: column;
+}
+
+@media (max-width: 760px) {
+  .invoice-container {
+    padding: 7px; /* Reduce el espacio alrededor del contenedor */
+    
+  }
+
+  .cart-item {
+    padding: 5px; /* Reduce el espacio alrededor de los elementos del carrito */
+  }
+
+}
+
+.container {
+  width: 100%; /* Ajusta el ancho del contenedor al 100% del viewport */
+  padding-top: 60px; /* Espacio superior igual a la altura del navbar */
+}
+
+/* Estilos para el navbar */
+.item-nav {
+  color: #fff;
+  position: fixed; /* Fija el navbar en la parte superior de la página */
+  top: 0; /* Fija el navbar en la parte superior */
+  left: 0;
+  right: 0;
+  z-index: 999; /* Asegura que el navbar esté por encima de otros elementos */
+}
+
+.page-content {
+  padding-top: 20px;
+}
+
+.welcome-header {
+  position: relative; /* Establece la posición relativa para que los elementos internos sean posicionados en relación a este contenedor */
+  text-align: center; /* Centra el texto horizontalmente */
+}
+
+/* Estilos para la imagen */
+.item-img {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor padre */
+  height: auto; /* Hace que la altura de la imagen sea proporcional para mantener la relación de aspecto */
+}
+
+/* Estilos para el encabezado de bienvenida */
+.welcome-header h1 {
+  position: absolute; /* Establece la posición absoluta para superponer el encabezado sobre la imagen */
+  top: 40%; /* Centra verticalmente en la mitad superior de la imagen */
+  left: 0;
+  right: 0;
+  transform: translateY(-50%); /* Corrige la posición vertical centrando el encabezado */
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para mayor legibilidad */
+  color: #fff; /* Color del texto */
+  padding: 20px; /* Espaciado interno alrededor del texto */
+  font-size: 24px; /* Tamaño de fuente */
+  font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+  color: #318ce7;
+}
